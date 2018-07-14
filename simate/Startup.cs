@@ -50,6 +50,12 @@ namespace simate
             #region Authentication
                  .AddDefaultTokenProviders();
 
+            services.AddAuthentication().AddMicrosoftAccount(options =>
+            {
+                options.ClientId = Configuration["Authentication:Microsoft:ApplicationId"];
+                options.ClientSecret = Configuration["Authentication:Microsoft:Password"];
+            });
+
             services.Configure<IdentityOptions>(options =>
             {
                 // Password settings
