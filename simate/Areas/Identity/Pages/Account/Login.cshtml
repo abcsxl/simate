@@ -82,7 +82,7 @@
                             <p>
                                 @foreach (var provider in Model.ExternalLogins)
                                 {
-                                    <button type="submit" class="btn btn-default" name="provider" value="@provider.Name" title="@Localizer["Log in using your"] @provider.DisplayName @Localizer["account"]"><img src="~/images/login/@{@provider.Name}.png"></button>
+                                    <button type="submit" class="btn btn-default" name="provider" value="@provider.Name" title="@Localizer["Log in using your"] @provider.DisplayName @Localizer["account"]"><img src="~/images/login/@{@provider.DisplayName}.png"></button>
                                 }
                             </p>
                         </div>
