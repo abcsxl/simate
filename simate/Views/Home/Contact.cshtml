@@ -1,0 +1,51 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["Contact"];
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+@*<address>
+    One Microsoft Way<br />
+    Redmond, WA 98052-6399<br />
+    <abbr title="Phone">P:</abbr>
+    425.555.0100
+</address>
+
+<address>
+    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>*@
+<div class="row">
+    <div class="col-md-4">
+        <br />
+        <address>
+            <img src="~/images/contact/email.png" />&nbsp;<strong>@Localizer["Email:"]</strong><a href="mailto:simate@cn-simate.cn">simate@cn-simate.cn</a><br />
+            <img src="~/images/contact/address.png" />&nbsp;<strong>@Localizer["Address:"]</strong>@Localizer["Room 8, No. 30, Hubei modern hardware and electromechanical City, Dongxihu District, Wuhan, Hubei"]<br />
+            <img src="~/images/contact/telephone.png" />&nbsp;<strong>@Localizer["Phone:"]</strong>(+86-027)-8585 2008; 8585 6802<br />
+            <img src="~/images/contact/fax.png" />&nbsp;<strong>@Localizer["Fax:"]</strong>(+86-027)-8585 1980
+        </address>
+        <div>
+            <dl class="QQ">
+                <dt><a href="http://wpa.qq.com/msgrd?v=3&uin=14717318&site=qq&menu=yes" target="_blank" title="@Localizer["Support(QQ)"]"><img src="~/images/contact/QQ.png" /></a></dt>
+                <dd><a href="http://wpa.qq.com/msgrd?v=3&uin=14717318&site=qq&menu=yes" target="_blank" title="@Localizer["Support(QQ)"]">@Localizer["Support(QQ)"]</a></dd>
+                <dd>@Localizer["Time:"]09:00-18:00</dd>
+            </dl>
+        </div>
+        <div>
+            <dl class="WW">
+                <dt><a href="https://amos.alicdn.com/getcid.aw?v=3&uid=%E9%A9%B7%E9%A9%AC%E7%89%B9&site=cnalichn&groupid=0&s=1&charset=UTF-8&fromid=cnalichn%E9%A9%B7%E9%A9%AC%E7%89%B9" target="_blank" title="@Localizer["Support(wangwang)"]"><img src="~/images/contact/WW.png" /></a></dt>
+                <dd><a href="https://amos.alicdn.com/getcid.aw?v=3&uid=%E9%A9%B7%E9%A9%AC%E7%89%B9&site=cnalichn&groupid=0&s=1&charset=UTF-8&fromid=cnalichn%E9%A9%B7%E9%A9%AC%E7%89%B9" target="_blank" title="@Localizer["Support(wangwang)"]">@Localizer["Support(wangwang)"]</a></dd>
+                <dd>@Localizer["Time:"]09:00-18:00</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="col-md-6" style="text-align:center;">
+        <a href='http://api.map.baidu.com/geocoder?address=湖北省武汉市东西湖区湖北现代五金机电城30栋8号&output=html' target='_blank'>
+            <img style="margin:2px" width="400" height="300" src="http://api.map.baidu.com/staticimage?width=400&height=300&zoom=14&markers=湖北省武汉市东西湖区湖北现代五金机电城30栋8号" />
+        </a>
+    </div>
+</div>
