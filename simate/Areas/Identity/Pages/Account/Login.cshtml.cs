@@ -88,12 +88,12 @@ namespace simate.Areas.Identity.Pages.Account
 
     public class LoginInputModel
     {
-        [Required]
-        [EmailAddress]
+        [Required(ErrorMessage = "The {0} field is required.")]
+        [EmailAddress(ErrorMessage = "The {0} field is not a valid e-mail address.")]
         [Display(Name = "Email")]
         public string Email { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "The {0} field is required.")]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string Password { get; set; }

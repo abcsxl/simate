@@ -24,14 +24,7 @@ namespace simate.Areas.Identity.Pages.Account
         }
 
         [BindProperty]
-        public InputModel Input { get; set; }
-
-        public class InputModel
-        {
-            [Required]
-            [EmailAddress]
-            public string Email { get; set; }
-        }
+        public ForgotPasswordInputModel Input { get; set; }        
 
         public async Task<IActionResult> OnPostAsync()
         {
@@ -63,5 +56,13 @@ namespace simate.Areas.Identity.Pages.Account
 
             return Page();
         }
+    }
+
+    public class ForgotPasswordInputModel
+    {
+        [Required(ErrorMessage = "The {0} field is required.")]
+        [EmailAddress(ErrorMessage = "The {0} field is not a valid e-mail address.")]
+        [Display(Name = "Email")]
+        public string Email { get; set; }
     }
 }
