@@ -135,4 +135,10 @@
   <data name="Support" xml:space="preserve">
     <value>服务支持</value>
   </data>
+  <data name="News" xml:space="preserve">
+    <value>新闻资讯</value>
+  </data>
+  <data name="Solutions" xml:space="preserve">
+    <value>行业方案</value>
+  </data>
 </root>

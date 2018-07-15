@@ -1,7 +1,21 @@
-﻿@{
-    ViewData["Title"] = "About";
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["About"];
 }
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
-<p>Use this area to provide additional information.</p>
+<div class="row">
+    <div class="col-md-7">
+        @Html.Raw(ViewData["Content"])
+    </div>
+    <div class="col-md-3" style="text-align:center;">
+        @*<a href='http://api.map.baidu.com/geocoder?address=湖北省武汉市东西湖区湖北现代五金机电城30栋8号&output=html' target='_blank'>
+            <img style="margin:2px" width="400" height="300" src="http://api.map.baidu.com/staticimage?width=400&height=300&zoom=14&markers=湖北省武汉市东西湖区湖北现代五金机电城30栋8号" />
+        </a>*@
+        <img width="500" height="282" src="~/images/simate_mall.jpg" />
+    </div>
+</div>

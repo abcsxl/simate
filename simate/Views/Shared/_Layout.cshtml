@@ -40,8 +40,10 @@
         <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>*@
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">@Localizer["Home"]</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">@Localizer["About"]</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">@Localizer["Products"]</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">@Localizer["Support"]</a></li>
+                    <li><a asp-area="" asp-controller="Products" asp-action="Index">@Localizer["Products"]</a></li>
+                    <li><a asp-area="" asp-controller="Solutions" asp-action="Index">@Localizer["Solutions"]</a></li>
+                    <li><a asp-area="" asp-controller="News" asp-action="Index">@Localizer["News"]</a></li>
+                    <li><a asp-area="" asp-controller="Support" asp-action="Index">@Localizer["Support"]</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">@Localizer["Contact"]</a></li>
                 </ul>
                 <partial name="_LoginPartial" />
