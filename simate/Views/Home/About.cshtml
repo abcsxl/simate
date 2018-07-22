@@ -8,62 +8,69 @@
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
-<div class="row">
-    <div class="col-md-7">
-        @Html.Raw(ViewData["Content"])
-        @Html.Raw(ViewData["business philosophy"])
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            @Html.Raw(ViewData["Content"])
+            @Html.Raw(ViewData["business philosophy"])
+        </div>
+        <div class="col-md-8 pull-right">
+            @*<img width="770" src="~/images/simate_mall.jpg" class="center-block" />*@
+            <img src="~/images/simate_mall.jpg" class="center-block img-responsive" />
+        </div>
+    </div>
+
+    <div class="row">
         @Html.Raw(ViewData["leading products"])
     </div>
-    <div class="col-md-3">
-        <img width="400" height="226" src="~/images/simate_mall.jpg" />        
-    </div>
-</div>
 
-<div class="row">
-    <div class="col-md-4">
-        <img src="~/images/cert/yyzz.jpg" />
-    </div>
-    <div class="col-md-4">
-        <img src="~/images/cert/zzjgdmz.jpg" />
-    </div>
-    <div class="col-md-4">
-        <img src="~/images/cert/sb.jpg" />
-    </div>
-    <div class="col-md-4">
-        <img src="~/images/cert/khxkz.jpg" />
-    </div>
-    <div class="col-md-4">
-        <img src="~/images/cert/swdjz.jpg" />
-    </div>
-    <div class="col-md-4">
-        <img src="~/images/cert/swdjz2.jpg" />
+    <div class="row">
+        <hr />
+        <div class="col-md-4">
+            <img src="~/images/cert/yyzz.jpg" class="center-block img-responsive" />
+        </div>
+        <div class="col-md-4">
+            <img src="~/images/cert/zzjgdmz.jpg" class="center-block img-responsive" />
+        </div>
+        <div class="col-md-4">
+            <img src="~/images/cert/sb.jpg" class="center-block img-responsive" />
+        </div>
+        <div class="col-md-4">
+            <img src="~/images/cert/khxkz.jpg" class="center-block img-responsive" />
+        </div>
+        <div class="col-md-4">
+            <img src="~/images/cert/swdjz.jpg" class="center-block img-responsive" />
+        </div>
+        <div class="col-md-4">
+            <img src="~/images/cert/swdjz2.jpg" class="center-block img-responsive" />
+        </div>
     </div>
 </div>
 @*<table class="table-condensed">
-    <tbody>
-        <tr>
-            <td>
-                <img src="~/images/cert/yyzz.jpg" />
-            </td>
-            <td>
-                <img src="~/images/cert/zzjgdmz.jpg" />
-            </td>
-            <td>
-                <img src="~/images/cert/sb.jpg" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="~/images/cert/khxkz.jpg" />
-            </td>
-            <td>
-                <img src="~/images/cert/swdjz.jpg" />
-            </td>
-            <td>
-                <img src="~/images/cert/swdjz2.jpg" />
-            </td>
-        </tr>
-    </tbody>
-</table>*@
+        <tbody>
+            <tr>
+                <td>
+                    <img src="~/images/cert/yyzz.jpg" />
+                </td>
+                <td>
+                    <img src="~/images/cert/zzjgdmz.jpg" />
+                </td>
+                <td>
+                    <img src="~/images/cert/sb.jpg" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="~/images/cert/khxkz.jpg" />
+                </td>
+                <td>
+                    <img src="~/images/cert/swdjz.jpg" />
+                </td>
+                <td>
+                    <img src="~/images/cert/swdjz2.jpg" />
+                </td>
+            </tr>
+        </tbody>
+    </table>*@
 
 

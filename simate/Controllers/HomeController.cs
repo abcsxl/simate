@@ -56,10 +56,10 @@ namespace simate.Controllers
                     "<p> " +
                     "	◎business philosophy" +
                     "	<ol> " +
-                    "		<li><b>Integrity:</b>We have to keep our promise, a word spoken is past recalling. " +
-                    "		<li><b>Difference: </b>differentiation, serving the public, but not pandering, not following." +
-                    "		<li><b>Quality:</b>create the highest value for customers with high quality products." +
-                    "		<li><b>Win-win:</b>Join hands with customers in fair, just and open cooperation, and achieve development and win-win with the best quality and service. " +
+                    "		<li><strong>Integrity:</strong>We have to keep our promise, a word spoken is past recalling. " +
+                    "		<li><strong>Difference: </strong>differentiation, serving the public, but not pandering, not following." +
+                    "		<li><strong>Quality:</strong>create the highest value for customers with high quality products." +
+                    "		<li><strong>Win-win:</strong>Join hands with customers in fair, just and open cooperation, and achieve development and win-win with the best quality and service. " +
                     "	</ol> " +
                     "</p>"
                     ;
@@ -69,8 +69,8 @@ namespace simate.Controllers
                 ViewData["Content"] =
                     //HtmlEncoder.Default.Encode(
                     "<p>" +
-                    "武汉驷马特轴承有限公司是一家专业销售轴承及相关产品的公司企业。<br />" +
-                    "驷马特成立于2006年，致力于提供全系列轴承一站式解决方案。公司自有商标“SIMATE &reg;”，为用户更可靠高品质轴承产品，为客户创造更多价值。现备有20大类系列的4500多种型号现货库存。针对行业客户需求配备专用库存，随时满足客户的专业使用需求。" +
+                    "&nbsp;&nbsp;&nbsp;&nbsp;武汉驷马特轴承有限公司是一家专业销售轴承及相关产品的公司企业。<br />" +
+                    "&nbsp;&nbsp;&nbsp;&nbsp;驷马特成立于2006年，致力于提供全系列轴承一站式解决方案。公司自有商标“SIMATE &reg;”，为用户更可靠高品质轴承产品，为客户创造更多价值。现备有20大类系列的4500多种型号现货库存。针对行业客户需求配备专用库存，随时满足客户的专业使用需求。" +
                     "</p>"
                     ;
 
@@ -90,10 +90,10 @@ namespace simate.Controllers
                     "<p>" +
                     "    ◎经营理念" +
                     "    <ol>" +
-                    "        <li><b>诚信：</b>君子一言，“驷马”难追。 诚：诚意、真诚，信：有信、守信；诚信就是付出再多也要说到做到。" +
-                    "        <li><b>差异：</b>公司名称取义：驷马特的“特”就是要体现差异化经营，服务大众，但不迎合、不追随。" +
-                    "        <li><b>品质：</b>提供精益求精的表里如一高品质产品，用高品质产品为客户创造最高价值。" +
-                    "        <li><b>共赢：</b>在公平、公正、开放的合作关系中携手客户，用最好的品质与服务获得发展共赢。" +
+                    "        <li><strong>诚信：</strong>君子一言，“驷马”难追。 诚：诚意、真诚，信：有信、守信；诚信就是付出再多也要说到做到。" +
+                    "        <li><strong>差异：</strong>公司名称取义：驷马特的“特”就是要体现差异化经营，服务大众，但不迎合、不追随。" +
+                    "        <li><strong>品质：</strong>提供精益求精的表里如一高品质产品，用高品质产品为客户创造最高价值。" +
+                    "        <li><strong>共赢：</strong>在公平、公正、开放的合作关系中携手客户，用最好的品质与服务获得发展共赢。" +
                     "    </ol>" +
                     "</p>"
                     //)
