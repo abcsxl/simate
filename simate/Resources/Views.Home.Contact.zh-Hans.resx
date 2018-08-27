@@ -147,4 +147,13 @@
   <data name="Room 8, No. 30, Hubei modern hardware and electromechanical City, Dongxihu District, Wuhan, Hubei" xml:space="preserve">
     <value>湖北省武汉市东西湖区湖北现代五金机电城30栋8号</value>
   </data>
+  <data name="alibaba" xml:space="preserve">
+    <value>阿里巴巴店铺</value>
+  </data>
+  <data name="taobao" xml:space="preserve">
+    <value>淘宝店铺</value>
+  </data>
+  <data name="weibo" xml:space="preserve">
+    <value>新浪微博</value>
+  </data>
 </root>
