@@ -19,7 +19,8 @@ namespace simate
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                //.UseUrls("http://*:6000")
+                .UseUrls("https://*:6001;http://*:6000")
+                .UseEnvironment("Development")
                 .UseStartup<Startup>();
     }
 }
